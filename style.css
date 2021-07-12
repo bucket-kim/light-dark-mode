@@ -16,13 +16,14 @@
 }
 
 [data-theme="dark"] {
-  --primary-color: rgb(150, 65, 255);
-  --primary-variant: #6c63ff;
-  --secondary-color: #03dac5;
-  --on-primary: #000;
+  --primary-color: rgb(112, 177, 252);
+  --primary-variant: #7ac3ff;
+  --secondary-color: #0384da;
+  --on-primary: rgb(240, 240, 240);
   --on-background: rgba(255, 255, 255, 0.9);
   --on-background-alt: rgba(255, 255, 255, 0.7);
   --background: #121212;
+  --box-shadow: 0 5px 20px 1px rgba(236, 236, 236, 0.5);
 }
 
 html {
@@ -31,7 +32,9 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--background);
+  color: var(--on-background);
+  transition: ease all 0.3s;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2335c1ff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
